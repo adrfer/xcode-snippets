@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>available</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#available(&lt;#platform name#&gt; &lt;#version#&gt;, &lt;#...#&gt;, *)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>213E74B9-63A4-486F-98AB-EEE61899735C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Used as a condition of an if, while, and guard statement to query the availability of APIs at runtime, based on specified platforms arguments</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Availability Condition Statement</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

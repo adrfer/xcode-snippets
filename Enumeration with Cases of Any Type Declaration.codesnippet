@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>enum</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>enum &lt;#name#&gt;: &lt;#adopted protocols#&gt; {
+    case &lt;#case 1#&gt;
+    case &lt;#case 2 (associated value types)#&gt;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>08CD355E-0266-4B0B-BD22-9712B99D5C61</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Introduces an enumeration type, a group of related values, that contains cases of any type and  can store associated values</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Enumeration with Cases of Any Type Declaration</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

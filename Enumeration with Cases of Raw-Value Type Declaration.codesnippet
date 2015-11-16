@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>enum</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>enum &lt;#name#&gt;: &lt;#raw-value type#&gt;, &lt;#adopted protocols#&gt; {
+    case &lt;#case 1#&gt; = &lt;#raw value 1#&gt;
+    case &lt;#case 2#&gt; = &lt;#raw value 2#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E53CEC94-1094-4A5A-B664-B8B9A878037C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Introduces an enumeration type, a group of related values, that contains cases of the same basic type</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Enumeration with Cases of Raw-Value Type Declaration</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
