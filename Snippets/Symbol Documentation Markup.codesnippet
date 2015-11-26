@@ -11,13 +11,15 @@
 	<key>IDECodeSnippetContents</key>
 	<string>/// &lt;#description#&gt;
 ///
+/// - parameter &lt;#name#&gt;: &lt;#description#&gt;
 ///
-/// - parameters: &lt;#...#&gt;
+/// - parameters:
+///   - &lt;#name#&gt;: &lt;#description#&gt;
+///   - &lt;#name#&gt;: &lt;#description#&gt;
 ///
-/// - throws: &lt;#...#&gt;
+/// - throws: &lt;#description#&gt;
 ///
-/// - returns: &lt;#...#&gt;
-</string>
+/// - returns: &lt;#description#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>AA2700BC-79FE-458A-9533-499C83D37DEB</string>
 	<key>IDECodeSnippetLanguage</key>
