@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>doc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//: - &lt;#text#&gt;
+//: - &lt;#text#&gt;
+//: - &lt;#text#&gt;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F045147F-2A0D-42F7-AEB0-BE5789928AA9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Displays text as a bulleted list in Playground comment or Symbol documentation, delimiters are asterisk (*), plus sign (+), or hyphen (-)</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Bulleted List Comment Markup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

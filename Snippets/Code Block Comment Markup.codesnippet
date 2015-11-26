@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>doc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//:    &lt;#code#&gt;
+//:    &lt;#code#&gt;
+//:    &lt;#code#&gt;
+//:    &lt;#code#&gt;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F4A6B38F-C253-49B7-81F7-6A7A3BF0DE1A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Displays the text as a block of code in Playground comment or Symbol documentation</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Code Block Comment Markup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>doc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// &lt;#description#&gt;
+///
+///
+/// - parameters: &lt;#...#&gt;
+///
+/// - throws: &lt;#...#&gt;
+///
+/// - returns: &lt;#...#&gt;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AA2700BC-79FE-458A-9533-499C83D37DEB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates richly formatted quick help for a documented symbol, accessed via Quick Help inspector or by Option-clicking a symbol</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Symbol Documentation Markup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

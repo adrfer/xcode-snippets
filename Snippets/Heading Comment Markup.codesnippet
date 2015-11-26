@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>doc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//: # &lt;#heading 1#&gt;
+//: ## &lt;#heading 2#&gt;
+//: ### &lt;#heading 3#&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>94C05D57-3A92-4F5B-BEC1-9ADC846DCFDE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Displays a line of text formatted as a heading in Playground comment or Symbol documentation</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Heading Comment Markup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
