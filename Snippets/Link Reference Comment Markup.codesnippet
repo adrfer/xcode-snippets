@@ -9,7 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//: &lt;#text to display#&gt;: &lt;#URL#&gt; "&lt;#hover title#&gt;"</string>
+	<string>//&lt;#:#&gt; [&lt;#reference#&gt;]: &lt;#URL#&gt; "&lt;#hover title#&gt;"
+//&lt;#:#&gt; &lt;#text with [reference]#&gt;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>160DDFC0-6C13-46A5-B889-8F752095014E</string>
 	<key>IDECodeSnippetLanguage</key>

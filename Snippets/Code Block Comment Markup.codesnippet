@@ -9,11 +9,10 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//:    &lt;#code#&gt;
-//:    &lt;#code#&gt;
-//:    &lt;#code#&gt;
-//:    &lt;#code#&gt;
-</string>
+	<string>//&lt;#:#&gt;    &lt;#code#&gt;
+//&lt;#:#&gt;    &lt;#code#&gt;
+//&lt;#:#&gt;    &lt;#code#&gt;
+//&lt;#:#&gt;    &lt;#code#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F4A6B38F-C253-49B7-81F7-6A7A3BF0DE1A</string>
 	<key>IDECodeSnippetLanguage</key>

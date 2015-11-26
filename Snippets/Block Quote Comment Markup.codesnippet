@@ -9,9 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//: &gt; &lt;#text#&gt;
-//: &gt; &lt;#text#&gt;
-//: &gt; &lt;#text#&gt;
+	<string>//&lt;#:#&gt; &lt;#text#&gt;
+//&lt;#:#&gt;
+//&lt;#:#&gt; &gt; &lt;#text#&gt;
+//&lt;#:#&gt; &gt; &lt;#text#&gt;
+//&lt;#:#&gt; &gt; &lt;#text#&gt;
+//&lt;#:#&gt;
+//&lt;#:#&gt; &lt;#text#&gt;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F5C17E7C-A244-46DC-BDFD-A1452896B1EA</string>
