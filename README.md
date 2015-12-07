@@ -1,5 +1,5 @@
 # Xcode Snippets
-A jazzy arsenal of Swift code snippets for Xcode.
+A jazzy arsenal of Swift snippets for Xcode.
 
 Snippets tested in `Xcode 7.1.1` and `Swift 2.1`.
 
@@ -7,14 +7,14 @@ Snippets tested in `Xcode 7.1.1` and `Swift 2.1`.
 
 ## Install
 
-To install, download the key binding file and then:
+To install, download the snippets and then:
 
 1. Copy it to **~/Library/Developer/Xcode/UserData/CodeSnippets**
 2. Open/restart **Xcode**
 
 ## Uninstall
 
-To remove the custom key bindings:
+To remove the custom snippets:
 
 1. Delete the contents of **~/Library/Developer/Xcode/UserData/CodeSnippets**
 2. Open/restart **Xcode**
