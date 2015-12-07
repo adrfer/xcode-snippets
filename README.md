@@ -22,4 +22,4 @@ To remove the custom key bindings:
 --
 Hey, looking for themes? Check [xcode-themes](https://github.com/adrfer/xcode-themes).
 
-Interested in key bindings? Take a look at [xcode-key-bindings](https://github.com/adrfer/xcode-key-bindings).
+Interested in key bindings? Take a look at [xcode-keybindings](https://github.com/adrfer/xcode-keybindings).
