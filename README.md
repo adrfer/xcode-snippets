@@ -27,6 +27,6 @@ or
 2. Select the code snippet to remove and hit delete
 
 --
-Hey, looking for themes? Check [xcode-themes](https://github.com/adrfer/xcode-themes).
+Hey, looking for themes? Check out [xcode-themes](https://github.com/adrfer/xcode-themes).
 
 Interested in key bindings? Take a look at [xcode-keybindings](https://github.com/adrfer/xcode-keybindings).
