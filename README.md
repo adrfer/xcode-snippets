@@ -1,7 +1,7 @@
 # Xcode Snippets
 A jazzy arsenal of Swift snippets for Xcode.
 
-Snippets tested in `Xcode 7.1.1` and `Swift 2.1`.
+Snippets tested in `Xcode 8` and `Swift 3`.
 
 ![screenshot](https://raw.githubusercontent.com/adrfer/xcode-snippets/master/Screenshot.png)
 
