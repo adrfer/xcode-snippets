@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+# Check if git is available
+if ! command -v 'git' >/dev/null 2>&1; then
+  echo 'Ooops, git not found. '
+  echo 'Go to https://git-scm.com for more info.'
+  exit 1
+fi
+
+local_repo="${HOME}/.xcode-snippets"
+remote_repo='https://github.com/adrfer/xcode-snippets.git'
+destination="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
+
+# Check the destination
+if [[ -d "${local_repo}" ]]; then
+  echo -n "Backing up ${local_repo}..."
+  mv -f "${local_repo%/}"{," copy $(date +%s)"}
+  echo ' done.'
+fi
+
+# Clone project into the destination
+echo -n "Setting up your new arsenal of Swift code snippets..."
+
+if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
+  rm -rf "${destination}"
+  mv "${local_repo}/Snippets" "${destination}"
+  echo ' done.'
+else
+  echo 'Ooops, there was an error, try again.'
+  exit 1
+fi
+
+# Kill Xcode if it's running, open it if not
+
+if [[ $(pgrep -x '[xX]code') ]]; then
+  read -r -p 'Xcode needs to be restarted now, ok (y/n [n])? '
+
+  if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
+    osascript -e 'tell app "Xcode" to quit' >/dev/null 2>&1
+  fi
+fi
+
+if [[ ! $(pgrep -x '[xX]code') ]]; then
+  read -r -p 'Open Xcode now (y/n [n])? '
+
+  if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
+    open -a Xcode
+  fi
+fi
+
+echo 'All good, enjoy!'
+exit 0
