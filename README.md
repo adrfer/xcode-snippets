@@ -7,12 +7,11 @@ Snippets tested in `Xcode 8` and `Swift 3`.
 
 ## Usage
 
-### Add
+### Install
 
-To add custom snippets:
+Open a terminal and run:
 
-1. Copy the files from this repo to **~/Library/Developer/Xcode/UserData/CodeSnippets**
-2. Open/restart **Xcode**
+    bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/install)
 
 ### Remove
 
