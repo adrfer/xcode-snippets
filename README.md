@@ -13,17 +13,11 @@ Open a terminal and run:
 
     bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/install)
 
-### Remove
+### Uninstall
 
-To remove custom snippets:
+Open a terminal and run:
 
-1. Delete the contents of **~/Library/Developer/Xcode/UserData/CodeSnippets**
-2. Open/restart **Xcode**
-
-or
-
-1. Open **Xcode** and go to the **Code Snippet Library** ( <kbd>^</kbd><kbd>⌥</kbd><kbd>⌘</kbd><kbd>2</kbd> )
-2. Select the code snippet to remove and hit delete
+        bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/uninstall)
 
 --
 Hey, looking for themes? Check out [xcode-themes](https://github.com/adrfer/xcode-themes).
