@@ -9,7 +9,7 @@ fi
 
 local_repo="${HOME}/.xcode-snippets"
 remote_repo='https://github.com/adrfer/xcode-snippets.git'
-destination="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
+code_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 # Check the destination
 if [[ -d "${local_repo}" ]]; then
@@ -22,8 +22,8 @@ fi
 echo -n "Setting up your new arsenal of Swift code snippets..."
 
 if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
-  rm -rf "${destination}"
-  mv "${local_repo}/Snippets" "${destination}"
+  rm -rf "${code_snippets}"
+  mv "${local_repo}/Snippets" "${code_snippets}"
   echo ' done.'
 else
   echo 'Ooops, there was an error, try again.'
