@@ -5,15 +5,13 @@ Snippets tested in `Xcode 8` and `Swift 3`.
 
 ![screenshot](https://raw.githubusercontent.com/adrfer/xcode-snippets/master/Screenshot.png)
 
-## Usage
-
-### Install
+## Install
 
 Open a terminal and run:
 
     bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/install)
 
-### Uninstall
+## Uninstall
 
 Open a terminal and run:
 
