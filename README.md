@@ -15,7 +15,7 @@ Open a terminal and run:
 
 Open a terminal and run:
 
-        bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/uninstall)
+    bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/uninstall)
 
 --
 Hey, looking for themes? Check out [xcode-themes](https://github.com/adrfer/xcode-themes).
