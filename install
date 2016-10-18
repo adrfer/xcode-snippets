@@ -30,8 +30,7 @@ else
   exit 1
 fi
 
-# Kill Xcode if it's running, open it if not
-
+# Restart and/or open Xcode
 if [[ $(pgrep -x '[xX]code') ]]; then
   read -r -p 'Xcode needs to be restarted now, ok (y/n [n])? '
 
