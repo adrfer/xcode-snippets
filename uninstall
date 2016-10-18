@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+# Confirm uninstall
+read -r -p 'Sure to uninstall (y/n [n])? '
+
+if [[ ! "${REPLY}" =~ ^[Yy]$ ]]; then
+  echo 'Ok then, nothing much to see here.'
+  exit 0
+fi
+
+# Define variables
+local_repo="${HOME}/.xcode-snippets"
+local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
+
+# Remove local repo, if any
+if [[ -d "${local_repo}" ]]; then
+  echo -n "Removing ${local_repo}..."
+  rm -rf "${local_repo}"
+  echo ' done.'
+else
+  echo "${local_repo} not found."
+fi
+
+# Remove local snippets, if any
+if [[ -d "${local_snippets}" ]]; then
+  echo -n "Removing ${local_snippets}..."
+  rm -rf "${local_snippets}"
+  echo ' done.'
+else
+  echo "${local_snippets} not found."
+fi
+
+# Restart and/or open Xcode
+if [[ $(pgrep -x '[xX]code') ]]; then
+  read -r -p 'Xcode needs to be restarted now, ok (y/n [n])? '
+
+  if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
+    osascript -e 'tell app "Xcode" to quit' >/dev/null 2>&1
+  fi
+fi
+
+if [[ ! $(pgrep -x '[xX]code') ]]; then
+  read -r -p 'Open Xcode now (y/n [n])? '
+
+  if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
+    open -a Xcode
+  fi
+fi
+
+echo 'All good, farewell!'
+exit 0
