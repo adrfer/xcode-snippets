@@ -20,7 +20,7 @@ if [[ -d "${local_repo}" ]]; then
 fi
 
 # Download new snippets
-echo -n "Dowloading your arsenal of Swift code snippets..."
+echo -n "Downloading your arsenal of Swift code snippets..."
 
 if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
   echo ' done.'
