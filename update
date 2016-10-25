@@ -10,7 +10,7 @@ fi
 # Define variables
 local_repo="${HOME}/.xcode-snippets"
 remote_repo='https://github.com/adrfer/xcode-snippets.git'
-code_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
+local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 # Backup existing snippets
 if [[ -d "${local_repo}" ]]; then
@@ -34,8 +34,8 @@ cd "${local_repo}"
 echo -n "Now updating..."
 
 if git checkout --quiet . >/dev/null 2>&1 && git pull --quiet origin master >/dev/null 2>&1; then
-  rm -rf "${code_snippets}"
-  cp -r "${local_repo}/Snippets" "${code_snippets}"
+  rm -rf "${local_snippets}"
+  cp -r "${local_repo}/Snippets" "${local_snippets}"
   echo ' done.'
   cd - >/dev/null 2>&1
 else

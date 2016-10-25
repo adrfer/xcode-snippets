@@ -9,8 +9,8 @@ fi
 
 # Define variables
 local_repo="${HOME}/.xcode-snippets"
+local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 remote_repo='https://github.com/adrfer/xcode-snippets.git'
-code_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 # Backup exising snippets
 if [[ -d "${local_repo}" ]]; then
@@ -23,8 +23,8 @@ fi
 echo -n "Setting up your new arsenal of Swift code snippets..."
 
 if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
-  rm -rf "${code_snippets}"
-  cp -r "${local_repo}/Snippets" "${code_snippets}"
+  rm -rf "${local_snippets}"
+  cp -r "${local_repo}/Snippets" "${local_snippets}"
   echo ' done.'
 else
   echo 'Ooops, there was an error, try again.'
