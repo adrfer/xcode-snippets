@@ -17,8 +17,6 @@ Open a terminal and run:
 
 ## Uninstall
 
-Open a terminal and run:
-
     bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/uninstall)
 
 --
