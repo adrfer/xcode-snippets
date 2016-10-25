@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# Check if git is available
+if ! command -v 'git' >/dev/null 2>&1; then
+  echo 'Ooops, git not found. '
+  echo 'Go to https://git-scm.com for more info.'
+  exit 1
+fi
+
+# Define variables
+local_repo="${HOME}/.xcode-snippets"
+remote_repo='https://github.com/adrfer/xcode-snippets.git'
+code_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
+
+# Backup existing snippets
+if [[ -d "${local_repo}" ]]; then
+  echo -n "Backing up ${local_repo}..."
+  mv -f "${local_repo%/}"{," copy $(date +%s)"}
+  echo ' done.'
+fi
+
+# Download new snippets
+echo -n "Dowloading your arsenal of Swift code snippets..."
+
+if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
+  echo ' done.'
+else
+  echo 'Ooops, there was an error, try again.'
+  exit 1
+fi
+
+# Update snippets
+cd "${local_repo}"
+echo -n "Now updating..."
+
+if git checkout --quiet . >/dev/null 2>&1 && git pull --quiet origin master >/dev/null 2>&1; then
+  rm -rf "${code_snippets}"
+  cp -r "${local_repo}/Snippets" "${code_snippets}"
+  echo ' done.'
+  cd - >/dev/null 2>&1
+else
+  echo 'Ooops, there was an error, try again.'
+  exit 1
+fi
+
+echo 'All good, enjoy!'
+exit 0
