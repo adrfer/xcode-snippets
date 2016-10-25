@@ -11,6 +11,10 @@ Open a terminal and run:
 
     bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/install)
 
+## Update
+
+    bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/update)
+
 ## Uninstall
 
 Open a terminal and run:
