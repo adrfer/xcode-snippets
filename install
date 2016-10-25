@@ -7,18 +7,19 @@ if ! command -v 'git' >/dev/null 2>&1; then
   exit 1
 fi
 
+# Define variables
 local_repo="${HOME}/.xcode-snippets"
 remote_repo='https://github.com/adrfer/xcode-snippets.git'
 code_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
-# Check the destination
+# Backup exising snippets
 if [[ -d "${local_repo}" ]]; then
   echo -n "Backing up ${local_repo}..."
   mv -f "${local_repo%/}"{," copy $(date +%s)"}
   echo ' done.'
 fi
 
-# Clone project into the destination
+# Download and manage snippets
 echo -n "Setting up your new arsenal of Swift code snippets..."
 
 if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
