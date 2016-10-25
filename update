@@ -43,5 +43,25 @@ else
   exit 1
 fi
 
+# Restart and/or open Xcode
+if [[ $(pgrep -x '[xX]code') ]]; then
+  read -r -p 'Xcode needs to be restarted now, ok (y/n [n])? '
+
+  if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
+    osascript -e 'tell app "Xcode" to quit' >/dev/null 2>&1
+  fi
+fi
+
+if [[ ! $(pgrep -x '[xX]code') ]]; then
+  read -r -p 'Open Xcode now (y/n [n])? '
+
+  if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
+    open -a Xcode
+  fi
+fi
+
+echo 'All good, enjoy!'
+exit 0
+
 echo 'All good, enjoy!'
 exit 0
