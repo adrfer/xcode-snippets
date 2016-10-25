@@ -12,7 +12,7 @@ fi
 local_repo="${HOME}/.xcode-snippets"
 local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
-# Remove local repo, if any
+# Remove repository, if any
 if [[ -d "${local_repo}" ]]; then
   echo -n "Removing ${local_repo}..."
   rm -rf "${local_repo}"
@@ -21,7 +21,7 @@ else
   echo "${local_repo} not found."
 fi
 
-# Remove local snippets, if any
+# Remove snippets, if any
 if [[ -d "${local_snippets}" ]]; then
   echo -n "Removing ${local_snippets}..."
   rm -rf "${local_snippets}"
