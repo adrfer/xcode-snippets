@@ -17,16 +17,12 @@ if [[ -d "${local_repo}" ]]; then
   echo -n "Removing ${local_repo}..."
   rm -rf "${local_repo}"
   echo ' done.'
-else
-  echo "${local_repo} not found."
 fi
 
 if [[ -d "${local_snippets}" ]]; then
   echo -n "Removing ${local_snippets}..."
   rm -rf "${local_snippets}"
   echo ' done.'
-else
-  echo "${local_snippets} not found."
 fi
 
 # Restart and/or open Xcode
