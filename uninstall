@@ -8,11 +8,11 @@ if [[ ! "${REPLY}" =~ ^[Yy]$ ]]; then
   exit 0
 fi
 
-# Define variables
+# Define repository variables
 local_repo="${HOME}/.xcode-snippets"
 local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
-# Remove repository, if any
+# Remove local files, if any
 if [[ -d "${local_repo}" ]]; then
   echo -n "Removing ${local_repo}..."
   rm -rf "${local_repo}"
@@ -21,7 +21,6 @@ else
   echo "${local_repo} not found."
 fi
 
-# Remove snippets, if any
 if [[ -d "${local_snippets}" ]]; then
   echo -n "Removing ${local_snippets}..."
   rm -rf "${local_snippets}"
