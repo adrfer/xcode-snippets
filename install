@@ -9,8 +9,8 @@ fi
 
 # Define repository variables
 local_repo="${HOME}/.xcode-snippets"
-local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 remote_repo='https://github.com/adrfer/xcode-snippets.git'
+local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 # Backup local files, if any
 for folder in "${local_repo}" "${local_snippets}"; do
