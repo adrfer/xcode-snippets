@@ -12,18 +12,16 @@ fi
 local_repo="${HOME}/.xcode-snippets"
 local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
-# Remove local files, if any
-if [[ -d "${local_repo}" ]]; then
-  echo -n "Removing ${local_repo}..."
-  rm -rf "${local_repo}"
-  echo ' done.'
-fi
+# Remove existing files, if any
+echo -n "Removing existing code snippets..."
 
-if [[ -d "${local_snippets}" ]]; then
-  echo -n "Removing ${local_snippets}..."
-  rm -rf "${local_snippets}"
-  echo ' done.'
-fi
+for folder in "${local_repo}" "${local_snippets}"; do
+  if [[ -d "${folder}" ]]; then
+    rm -rf "${folder}"
+  fi
+done
+
+echo ' done.'
 
 # Restart and/or open Xcode
 if [[ $(pgrep -x '[xX]code') ]]; then
