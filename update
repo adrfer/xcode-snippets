@@ -12,37 +12,37 @@ local_repo="${HOME}/.xcode-snippets"
 remote_repo='https://github.com/adrfer/xcode-snippets.git'
 local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
-# Backup local files, if any
-for folder in "${local_repo}" "${local_snippets}"; do
-  if [[ -d "${folder}" ]]; then
-    echo -n "Backing up ${folder}..."
-    mv -f "${folder%/}"{," copy $(date +%s)"}
-    echo ' done.'
-  fi
-done
-
-# Download remote files
-echo -n "Downloading your arsenal of Swift code snippets..."
-
-if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
+# Backup existing files, if any
+if [[ -d "${local_snippets}" ]]; then
+  echo -n "Backing up existing code snippets..."
+  mv -f "${local_snippets%/}"{," copy $(date +%s)"}
   echo ' done.'
-else
-  echo 'Ooops, there was an error, try again.'
-  exit 1
 fi
 
-# Update local files
-cd "${local_repo}"
-echo -n "Now updating..."
+# Update existing files or download new ones
+if [[ -d "${local_repo}" ]]; then
+  cd "${local_repo}"
+  echo -n "Updating your arsenal of Swift code snippets..."
 
-if git checkout --quiet . >/dev/null 2>&1 && git pull --quiet origin master >/dev/null 2>&1; then
-  rm -rf "${local_snippets}"
-  cp -r "${local_repo}/Snippets" "${local_snippets}"
-  echo ' done.'
-  cd - >/dev/null 2>&1
+  if git checkout --quiet . >/dev/null 2>&1 && git pull --quiet origin master >/dev/null 2>&1; then
+    rm -rf "${local_snippets}"
+    cp -r "${local_repo}/Snippets" "${local_snippets}"
+    echo ' done.'
+    cd - >/dev/null 2>&1
+  else
+    echo 'Ooops, there was an error, try again.'
+    exit 1
+  fi
 else
-  echo 'Ooops, there was an error, try again.'
-  exit 1
+  echo -n "Downloading your arsenal of Swift code snippets..."
+
+  if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
+    cp -r "${local_repo}/Snippets" "${local_snippets}"
+    echo ' done.'
+  else
+    echo 'Ooops, there was an error, try again.'
+    exit 1
+  fi
 fi
 
 # Restart and/or open Xcode
