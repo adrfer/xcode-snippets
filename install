@@ -13,13 +13,15 @@ remote_repo='https://github.com/adrfer/xcode-snippets.git'
 local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 # Backup local files, if any
+echo -n "Backing up code snippets..."
+
 for folder in "${local_repo}" "${local_snippets}"; do
   if [[ -d "${folder}" ]]; then
-    echo -n "Backing up ${folder}..."
     mv -f "${folder%/}"{," copy $(date +%s)"}
-    echo ' done.'
   fi
 done
+
+echo ' done.'
 
 # Download and manage remote files
 echo -n "Setting up your new arsenal of Swift code snippets..."
