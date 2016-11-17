@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 # Check if git is available
-if ! command -v 'git' >/dev/null 2>&1; then
+if ! command -v 'git' >/dev/null; then
   echo 'Ooops, git not found.'
-  echo 'Go to https://git-scm.com for more info.'
   exit 1
 fi
 
@@ -22,25 +21,26 @@ fi
 # Update existing files or download new ones
 if [[ -d "${local_repo}" ]]; then
   cd "${local_repo}"
-  echo -n "Updating your arsenal of Swift code snippets..."
+  echo -n "Updating your arsenal of code snippets..."
 
-  if git checkout --quiet . >/dev/null 2>&1 && git pull --quiet origin master >/dev/null 2>&1; then
+  if git checkout . && git pull origin master >/dev/null 2>&1; then
     rm -rf "${local_snippets}"
     cp -r "${local_repo}/Snippets" "${local_snippets}"
+    cd - >/dev/null
     echo ' done.'
-    cd - >/dev/null 2>&1
   else
-    echo 'Ooops, there was an error, try again.'
+    echo
+    echo "Ooops, unable to access ${remote_repo}, try again."
     exit 1
   fi
 else
-  echo -n "Downloading your arsenal of Swift code snippets..."
+  echo -n "Downloading your arsenal of code snippets..."
 
-  if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
+  if git clone "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
     cp -r "${local_repo}/Snippets" "${local_snippets}"
     echo ' done.'
   else
-    echo 'Ooops, there was an error, try again.'
+    echo "Ooops, unable to access ${remote_repo}, try again."
     exit 1
   fi
 fi

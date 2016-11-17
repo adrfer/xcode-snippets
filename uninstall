@@ -13,7 +13,7 @@ local_repo="${HOME}/.xcode-snippets"
 local_snippets="${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 # Remove existing files, if any
-echo -n "Removing existing code snippets..."
+echo -n "Removing any existing code snippets..."
 
 for folder in "${local_repo}" "${local_snippets}"; do
   if [[ -d "${folder}" ]]; then

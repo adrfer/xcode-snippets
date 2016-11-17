@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 # Check if git is available
-if ! command -v 'git' >/dev/null 2>&1; then
+if ! command -v 'git' >/dev/null; then
   echo 'Ooops, git not found.'
-  echo 'Go to https://git-scm.com for more info.'
   exit 1
 fi
 
@@ -24,14 +23,15 @@ done
 echo ' done.'
 
 # Download and setup new files
-echo -n "Setting up your arsenal of Swift code snippets..."
+echo -n "Setting up your arsenal of code snippets..."
 
-if git clone --quiet "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
+if git clone  "${remote_repo}" "${local_repo}" >/dev/null 2>&1; then
   rm -rf "${local_snippets}"
   cp -r "${local_repo}/Snippets" "${local_snippets}"
   echo ' done.'
 else
-  echo 'Ooops, there was an error, try again.'
+  echo
+  echo "Ooops, unable to access ${remote_repo}, try again."
   exit 1
 fi
 
