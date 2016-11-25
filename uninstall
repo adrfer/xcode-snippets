@@ -25,7 +25,7 @@ echo ' done.'
 
 # Restart and/or open Xcode
 if [[ $(pgrep -x '[xX]code') ]]; then
-  read -r -p 'Xcode needs to be restarted now, ok (y/n [n])? '
+  read -r -p 'Xcode needs to be restarted. Do it now (y/n [n])? '
 
   if [[ "${REPLY}" =~ ^[Yy]$ ]]; then
     osascript -e 'tell app "Xcode" to quit' >/dev/null 2>&1
