@@ -9,7 +9,12 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#fixity#&gt; operator &lt;#name#&gt; { &lt;#precedence#&gt; &lt;#associativity#&gt; }</string>
+	<string>precedencegroup &lt;#precedence group name#&gt; {
+    higherThan: &lt;#lower group names#&gt;
+    lowerThan: &lt;#higher group names#&gt;
+    associativity: &lt;#associativity#&gt;
+    assignment: &lt;#assignment#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2C4C38C2-7A3D-4B21-AE67-0E4C5E1D472C</string>
 	<key>IDECodeSnippetLanguage</key>
