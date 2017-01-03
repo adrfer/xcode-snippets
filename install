@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Fail fast if not on macOS
+if [[ "$(uname)" != 'Darwin' ]]; then
+  echo 'Ooops, this runs on macOS only.'
+  exit 1
+fi
+
 # Check if git is available
 if ! command -v 'git' >/dev/null; then
   echo 'Ooops, git not found.'
