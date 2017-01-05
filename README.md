@@ -20,6 +20,6 @@ Open a terminal and run:
     bash <(curl -sL https://raw.github.com/adrfer/xcode-snippets/master/uninstall)
 
 --
-Hey, looking for themes? Check out [xcode-themes](https://github.com/adrfer/xcode-themes).
+Hey, looking for awesome themes? Check out [xcode-themes](https://github.com/adrfer/xcode-themes).
 
-Interested in key bindings? Take a look at [xcode-keybindings](https://github.com/adrfer/xcode-keybindings).
+Interested in useful key bindings? Take a look at [xcode-keybindings](https://github.com/adrfer/xcode-keybindings).
